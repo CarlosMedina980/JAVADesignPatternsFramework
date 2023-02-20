@@ -1,5 +1,7 @@
-package com.designpatterns.singleresponsabilityprinciple;
+package com.designpatterns.singleresponsabilityprinciple.main;
 
+import com.designpatterns.singleresponsabilityprinciple.common.SearchSuggestion;
+import com.designpatterns.singleresponsabilityprinciple.common.SearchWidget;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -9,10 +11,10 @@ public class GoogleMainPage {
     private SearchWidget searchWidget;
     private SearchSuggestion searchSuggestion;
 
-    public GoogleMainPage(WebDriver driver) {
+    public GoogleMainPage(final WebDriver driver) {
         this.driver = driver;
-        this.searchWidget = PageFactory.initElements(driver, searchWidget.getClass());
-        this.searchSuggestion = PageFactory.initElements(driver, searchSuggestion.getClass());
+        this.searchWidget = PageFactory.initElements(driver, SearchWidget.class);
+        this.searchSuggestion = PageFactory.initElements(driver, SearchSuggestion.class);
     }
 
     public void goTo() {

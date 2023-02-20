@@ -1,12 +1,13 @@
-package com.designpatterns.singleresponsabilityprinciple;
+package com.designpatterns.singleresponsabilityprinciple.result;
 
+import com.designpatterns.singleresponsabilityprinciple.common.AbstractComponent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class ResultStat extends AbstractComponent {
 
-    @FindBy(id = "resultStats")
+    @FindBy(id = "result-stats")
     private WebElement stat;
 
     public ResultStat(WebDriver driver) {

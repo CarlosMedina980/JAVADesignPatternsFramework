@@ -9,10 +9,10 @@ import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 
-
 public class BaseTest {
+
     private static final long TIMEOUT = 30;
-    private WebDriver driver;
+    public static WebDriver driver;
 
     @BeforeTest
     public void setupDriver() {

@@ -1,4 +1,4 @@
-package com.designpatterns.singleresponsabilityprinciple;
+package com.designpatterns.singleresponsabilityprinciple.common;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
