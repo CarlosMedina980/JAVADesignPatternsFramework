@@ -7,7 +7,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cucumber.version>7.6.0</cucumber.version>
+        <cucumber.version>7.11.1</cucumber.version>
         <selenium.version>4.3.0</selenium.version>
         <webdrivermanager.version>5.2.1</webdrivermanager.version>
         <testng.version>7.4.0</testng.version>
@@ -59,6 +59,12 @@
             <groupId>org.apache.directory.studio</groupId>
             <artifactId>org.apache.commons.io</artifactId>
             <version>${apache.common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

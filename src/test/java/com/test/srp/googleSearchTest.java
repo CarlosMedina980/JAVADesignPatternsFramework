@@ -1,7 +1,8 @@
-package com.test;
+package com.test.srp;
 
 import com.designpatterns.singleresponsabilityprinciple.main.GoogleMainPage;
 import com.designpatterns.singleresponsabilityprinciple.result.GoogleResultPage;
+import com.test.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;

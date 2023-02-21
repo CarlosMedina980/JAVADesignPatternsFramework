@@ -4,23 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ceaa454-aaf3-4c74-ad90-863d783918b0" name="Changes" comment="Added test NG Runner, Cucumber BDD and Base Test and cucumber prop file">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/result/GoogleResultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/stepdefinitions/googleMainPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/googleSearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/utilities/Hooks.java" afterDir="false" />
+    <list default="true" id="6ceaa454-aaf3-4c74-ad90-863d783918b0" name="Changes" comment="Added Components and pages for SRP added test with data provider">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleEnglishPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleFrenchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GooglePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/runner/CucumberTestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/stepdefinitions/GoogleSearchSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/stepdefinitions/hooks/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/SRPGoogleSearchTest.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/common/AbstractComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/GoogleMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/main/GoogleMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/GoogleResultPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/NavigationBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/result/NavigationBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/ResultStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/result/ResultStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/SearchSuggestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/common/SearchSuggestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/SearchWidget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/singleresponsabilityprinciple/common/SearchWidget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stepdefinitions/googleMainPageSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/searchTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/searchTest.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testRunner/CucumberTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testRunner/CucumberTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/googleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/srp/googleSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +51,11 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cajam/Documents/QAAutomation/FunctionalProgramming/JAVADesignPatternsFramework/src/test/java/com/stepdefinitions&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cajam/Documents/QAAutomation/FunctionalProgramming/JAVADesignPatternsFramework/src/test/java/com/cucumber.stepdefinitions&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -70,16 +67,44 @@
       <recent name="C:\Users\cajam\Documents\QAAutomation\FunctionalProgramming\JAVADesignPatternsFramework\src\test\java\com" />
       <recent name="C:\Users\cajam\Documents\QAAutomation\FunctionalProgramming\JAVADesignPatternsFramework\src\test\resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.cucumber.stepdefinitions" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cucumber.stepdefinitions.hooks" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.googleSearchTest">
-    <configuration name="Feature: searchTest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CucumberTestRunner">
+    <configuration name="Feature: searchTest1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/searchTest.feature" />
       <option name="GLUE" value="com.stepdefinitions com.utilities" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="JAVADesignPatternsFramework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <shortenClasspath name="NONE" />
       <option name="SUGGESTED_NAME" value="Feature: searchTest" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Search for first suggestion and count results on search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/SRPGoogleSearchTest.feature" />
+      <option name="GLUE" value="com.cucumber.stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="JAVADesignPatternsFramework" />
+      <option name="NAME_FILTER" value="^Search for first suggestion and count results on search$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search for first suggestion and count results on search$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search for first suggestion and count results on search" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -99,6 +124,7 @@
       <module name="JAVADesignPatternsFramework" />
       <option name="NAME_FILTER" value="^$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
+      <shortenClasspath name="NONE" />
       <option name="SUGGESTED_NAME" value="Scenario: " />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
@@ -111,17 +137,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="googleSearchTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CucumberTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JAVADesignPatternsFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.*" />
+          <option name="PATTERN" value="com.cucumber.runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.googleSearchTest" />
+      <option name="PACKAGE_NAME" value="com.cucumber.runner" />
+      <option name="MAIN_CLASS_NAME" value="com.cucumber.runner.CucumberTestRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="googleSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JAVADesignPatternsFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.srp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.test.srp" />
+      <option name="MAIN_CLASS_NAME" value="com.test.srp.googleSearchTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -132,12 +185,12 @@
       <module name="JAVADesignPatternsFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.*" />
+          <option name="PATTERN" value="com.test.srp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.googleSearchTest" />
+      <option name="MAIN_CLASS_NAME" value="com.test.srp.googleSearchTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -147,28 +200,46 @@
     </configuration>
     <configuration name="googleSearchTest.googleWorkflow" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JAVADesignPatternsFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.test.*" />
+          <option name="PATTERN" value="com.test.srp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.test" />
-      <option name="MAIN_CLASS_NAME" value="com.test.googleSearchTest" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.test.srp" />
+      <option name="MAIN_CLASS_NAME" value="com.test.srp.googleSearchTest" />
       <option name="METHOD_NAME" value="googleWorkflow" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Feature: searchTest1" />
+      <item itemvalue="Cucumber Java.Scenario: Search for first suggestion and count results on search" />
+      <item itemvalue="Cucumber Java.Scenario: " />
+      <item itemvalue="TestNG.CucumberTestRunner" />
+      <item itemvalue="TestNG.googleSearchTest" />
+      <item itemvalue="TestNG.googleSearchTest.googleWorkflow" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.googleSearchTest" />
+        <item itemvalue="TestNG.CucumberTestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Search for first suggestion and count results on search" />
         <item itemvalue="TestNG.googleSearchTest.googleWorkflow" />
-        <item itemvalue="TestNG.googleSearchTest (1)" />
-        <item itemvalue="Cucumber Java.Feature: searchTest" />
+        <item itemvalue="TestNG.googleSearchTest" />
         <item itemvalue="Cucumber Java.Scenario: " />
       </list>
     </recent_temporary>
@@ -185,7 +256,9 @@
       <workItem from="1676550056301" duration="1002000" />
       <workItem from="1676551071979" duration="1778000" />
       <workItem from="1676842080067" duration="6740000" />
-      <workItem from="1676935521847" duration="1900000" />
+      <workItem from="1676935521847" duration="5937000" />
+      <workItem from="1676984546216" duration="1319000" />
+      <workItem from="1676985878254" duration="1384000" />
     </task>
     <task id="LOCAL-00001" summary="Maven initial project">
       <created>1676395417071</created>
@@ -201,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676551977165</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Components and pages for SRP added test with data provider">
+      <created>1676937564277</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676937564277</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +301,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Maven initial project" />
     <MESSAGE value="Added test NG Runner, Cucumber BDD and Base Test and cucumber prop file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test NG Runner, Cucumber BDD and Base Test and cucumber prop file" />
+    <MESSAGE value="Added Components and pages for SRP added test with data provider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Components and pages for SRP added test with data provider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
