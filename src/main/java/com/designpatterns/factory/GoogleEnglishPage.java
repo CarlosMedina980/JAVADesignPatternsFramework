@@ -11,8 +11,8 @@ import java.util.List;
 
 public class GoogleEnglishPage extends GooglePage {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
+    protected WebDriver driver;
+    protected WebDriverWait wait;
 
     @FindBy(name = "q")
     private WebElement searchBox;

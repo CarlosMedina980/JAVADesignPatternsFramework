@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ceaa454-aaf3-4c74-ad90-863d783918b0" name="Changes" comment="Added Components and pages for SRP added test with data provider">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleEnglishPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleFrenchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GooglePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/runner/CucumberTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/stepdefinitions/GoogleSearchSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cucumber/stepdefinitions/hooks/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/SRPGoogleSearchTest.feature" afterDir="false" />
+    <list default="true" id="6ceaa454-aaf3-4c74-ad90-863d783918b0" name="Changes" comment="Added idea workspace to gitignore">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleArabicPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/factory/googleSearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/googleSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/srp/googleSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleEnglishPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleEnglishPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleFrenchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/designpatterns/factory/GoogleFrenchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cajam/Documents/QAAutomation/FunctionalProgramming/JAVADesignPatternsFramework/src/test/java/com/cucumber.stepdefinitions&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cajam/Documents/QAAutomation/FunctionalProgramming/JAVADesignPatternsFramework/src/test/resources/testNGRunners&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -62,6 +59,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.stepdefinitions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cajam\Documents\QAAutomation\FunctionalProgramming\JAVADesignPatternsFramework\src\test\resources\testNGRunners" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cajam\Documents\QAAutomation\FunctionalProgramming\JAVADesignPatternsFramework\src\test\java\com" />
@@ -74,7 +74,7 @@
       <recent name="com.cucumber.stepdefinitions.hooks" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CucumberTestRunner">
+  <component name="RunManager" selected="TestNG.googleSearchTest (1)">
     <configuration name="Feature: searchTest1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/searchTest.feature" />
@@ -116,27 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/searchTest.feature" />
-      <option name="GLUE" value="com.stepdefinitions com.utilities" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="JAVADesignPatternsFramework" />
-      <option name="NAME_FILTER" value="^$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
-      <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Scenario: " />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CucumberTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JAVADesignPatternsFramework" />
       <extension name="coverage">
@@ -147,6 +126,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.cucumber.runner" />
       <option name="MAIN_CLASS_NAME" value="com.cucumber.runner.CucumberTestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="googleSearchTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JAVADesignPatternsFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.factory" />
+      <option name="MAIN_CLASS_NAME" value="com.test.factory.googleSearchTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -229,18 +225,18 @@
     <list>
       <item itemvalue="Cucumber Java.Feature: searchTest1" />
       <item itemvalue="Cucumber Java.Scenario: Search for first suggestion and count results on search" />
-      <item itemvalue="Cucumber Java.Scenario: " />
+      <item itemvalue="TestNG.googleSearchTest (1)" />
       <item itemvalue="TestNG.CucumberTestRunner" />
       <item itemvalue="TestNG.googleSearchTest" />
       <item itemvalue="TestNG.googleSearchTest.googleWorkflow" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.googleSearchTest (1)" />
         <item itemvalue="TestNG.CucumberTestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Search for first suggestion and count results on search" />
         <item itemvalue="TestNG.googleSearchTest.googleWorkflow" />
         <item itemvalue="TestNG.googleSearchTest" />
-        <item itemvalue="Cucumber Java.Scenario: " />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +254,8 @@
       <workItem from="1676842080067" duration="6740000" />
       <workItem from="1676935521847" duration="5937000" />
       <workItem from="1676984546216" duration="1319000" />
-      <workItem from="1676985878254" duration="1384000" />
+      <workItem from="1676985878254" duration="4877000" />
+      <workItem from="1677070470163" duration="1610000" />
     </task>
     <task id="LOCAL-00001" summary="Maven initial project">
       <created>1676395417071</created>
@@ -281,7 +278,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676937564277</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added BDD Cucumber for SRP Test Google Search Factory in progress">
+      <created>1676999226026</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676999226026</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Hooks for failure screenshots added reporting cucumber and testng runners">
+      <created>1677023051661</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023051661</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added idea workspace to gitignore">
+      <created>1677023149270</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677023149270</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +320,10 @@
     <MESSAGE value="Maven initial project" />
     <MESSAGE value="Added test NG Runner, Cucumber BDD and Base Test and cucumber prop file" />
     <MESSAGE value="Added Components and pages for SRP added test with data provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Components and pages for SRP added test with data provider" />
+    <MESSAGE value="Added BDD Cucumber for SRP Test Google Search Factory in progress" />
+    <MESSAGE value="Added Hooks for failure screenshots added reporting cucumber and testng runners" />
+    <MESSAGE value="Added idea workspace to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added idea workspace to gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

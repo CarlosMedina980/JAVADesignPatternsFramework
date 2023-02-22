@@ -12,7 +12,7 @@ import java.time.Duration;
 public class BaseTest {
 
     private static final long TIMEOUT = 30;
-    public static WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeTest
     public void setupDriver() {
